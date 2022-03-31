@@ -1,89 +1,110 @@
 <!DOCTYPE html>
 <html lang="ua">
-<head>
+        <ht>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selin Resume</title>
     <meta name="keywords" content="CV, Oleh, Selin, Resume">
     <meta name="description" content="Это сайт - резюме Олега Селина">
-<body>
-    <img src="imgs/oleh.jpg" alt="oleh" width="150">
-    
-    <h1>Олег Селин</h1>
+    <link rel="stylesheet" href="styles.css">
+    <body>
 
-    <p>Мне 22 года. Я сейчас прохожу курс по основам <strong>HTML&CSS</strong> в школе <strong>Result School</strong>. После прохождение буду дальше обучаться программированию.</p>
 
-    <p>Я <em>люблю гулять на свежем воздухе, общаться с людьми и приносить им пользу</em>.</p>
+    <div class="container">
+        <div class="info" >
+            
+            <img src="imgs/oleh.jpg" alt="oleh" class="avatar">
+            <div class="info-text">
+                <h1>Олег Селин</h1>
 
-    <h4>Список социальных сетей:</h4>
+                <p>Мне 22 года. Я сейчас прохожу курс по основам <strong>HTML&CSS</strong> в школе <strong>Result School</strong>. После прохождение буду дальше обучаться программированию.</p>
 
-    <a href="https://www.instagram.com/oleh_selin/" target="_blank">Instagram</a>
-    |
-    <a href="https://t.me/oleh_selin" target="_blank">Telegram</a>
-    |
-    <a href="https://www.facebook.com/oleh.selin" target="_blank">Facebook</a>
-    
-    <h2>Мои хобби</h2>
+                <p>Я <em>люблю гулять на свежем воздухе, общаться с людьми и приносить им пользу</em>.</p>
 
-    <ul>
-        <li>Футбол</li>
-        <li>Шахматы</li>
-        <li>Бег</li>
-    </ul>
+                <h4>Список социальных сетей:</h4>
 
-    <h2>Опыт работы</h2>
+                <a href="https://www.instagram.com/oleh_selin/" target="_blank">Instagram</a>
+                |
+                <a href="https://t.me/oleh_selin" target="_blank">Telegram</a>
+                |
+                <a href="https://www.facebook.com/oleh.selin" target="_blank">Facebook</a>
+            </div>  
+        </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Nice Price</td>
-                <td>Упаковщик</td>
-                <td>2018</td>
-            </tr>
-            <tr>
-                <td>McDonald's</td>
-                <td>Работник заведения 
-                    ресторанного хозяйства</td>
-                <td>2021</td>
-            </tr>
-            <tr>
-                <td>DailyDose</td>
-                <td>Помощник пицмастера</td>
-                <td>2021</td>
-            </tr>
-        </tbody>
-</table>
+        <div class="card bg-green">
+            
+            <h2>Мои хобби</h2>
 
-<h2>Связаться со мной</h2>
-<form>
+            <ul class="list">
+                <li>Футбол</li>
+                <li>Шахматы</li>
+                <li>Бег</li>
+            </ul>
+        </div>
+
+        <div class="card bg bg-red">
+        
+                <h2>Опыт работы</h2>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nice Price</td>
+                            <td>Упаковщик</td>
+                            <td>2018</td>
+                        </tr>
+                        <tr>
+                            <td>McDonald's</td>
+                            <td>Работник заведения 
+                                ресторанного хозяйства</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr>
+                            <td>DailyDose</td>
+                            <td>Помощник пицмастера</td>
+                            <td>2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+        </div>
+
     <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
+        
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+                
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="25" row="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Отправить!</button>
+
+        </form>
     </div>
 
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
+    </body>
 
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="25" row="5" placeholder="Введите сообщение..."></textarea>
-    </div>
-
-    <button type="submit">Отправить!</button>
-
-</form>
-
-    
-</body>
 </html>
